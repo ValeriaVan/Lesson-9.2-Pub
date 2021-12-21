@@ -1,0 +1,20 @@
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+money = input('Введите сумму для вклада')
+a=(per_cent['ТКБ'])
+b=(per_cent['СКБ'])
+c=(per_cent['ВТБ'])
+d=(per_cent['СБЕР'])
+
+investment=(int(money))
+all_deposit=((a+b+c+d)*investment/100)
+print('Общая сумма, которую вы можете заработать, при вкладе указанной суммы в каждый из банков:', all_deposit)
+
+deposit_1=(int(a*investment/100))
+deposit_2=(int(b*investment/100))
+deposit_3=(int(c*investment/100))
+deposit_4=(int(d*investment/100))
+deposit=[deposit_1, deposit_2, deposit_3, deposit_4]
+print('deposit=',deposit)
+
+deposit_i=max(deposit)
+print('Максимальная сумма среди банков, которую вы можете заработать:', deposit_i)
