@@ -21,7 +21,7 @@ def count(S, element):
 
 def bin_search(S, element, left, right):
     if left > right:
-        return False
+        return "Числа не соответствуют заданному условию"
 
     middle = (right + left) // 2
     if S[middle] == element:
